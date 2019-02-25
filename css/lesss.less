@@ -1,0 +1,321 @@
+* {
+	padding: 0;
+	margin:  0;
+}
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oswald:600');
+
+@clr: rgb(60, 195, 181);
+.container {
+	width:  80%;
+	margin: 0 auto;
+}
+
+header {
+	height:  65px;
+	padding: 10px  0;
+	background-color: #fff;
+
+	.container {
+			position: relative;
+	}
+
+	h1 {
+	  font-family: "Lobster";
+	  line-height: 0.388;
+	  color: @clr;
+	}
+
+	form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#search-area {
+		border: none;
+		border-top: 1px solid #e1e1e1;
+		width: 435px;
+		height: 35px;
+		outline: none;
+		text-align: center;
+	}
+
+	#search-icon {
+		width:  20px; 
+   		height: 20px; 
+	}
+
+	#basket {
+		position: absolute;
+		top: 0%;
+		right: 6%;
+	}
+
+	span {
+		display: inline-block;
+		font-size: 28px;
+		font-family: "Oswald";
+		color: rgb(161, 161, 161);
+		line-height: 0.576;
+		position: absolute;
+		right: 0%;
+		top:   12%;
+	}
+}
+
+#nav {
+	height: 27px;
+	padding: 5px 0;
+	background-color: @clr;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	li {
+		display: inline-block;
+	}
+}
+/*header====*/
+.banner {
+	padding: 50px 0 30px 0;
+	background-image: url('../img/main-bg.png');
+	color: #fff;
+
+	.container {
+		width: 60%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.cl-text {
+		align-items: center;
+		width: 300px;
+		font-size: 17px;
+		font-family: "OpenSans";
+
+		h1 {
+			margin-bottom: 25px;
+			font-size: 61px;
+			font-family: "Oswald";
+			color: rgb(255, 255, 255);
+			line-height: 0.885;
+		}
+	}
+}
+
+	#shop-now {
+		margin-top: 30px;
+		padding: 15px 10px;
+		border-radius: 15px;
+		cursor: pointer;
+		background-color: transparent;
+		border: 3px solid #fff;
+	    font-size: 27px;
+	    font-family: "Oswald";
+	    color: rgb(255, 255, 255);
+	    line-height: 0.704;
+	}
+/*banner=========*/
+.categories {
+	height: 100px;
+	padding: 10px 0 10px 0;
+	position: relative;
+
+	.owl-carousel div img {
+		float: left;
+		width: 30%;
+		height: 50%;
+	}
+
+	h1 {
+  		font-size: 27px;
+  		padding-top: 10px;
+  		font-family: "Oswald";
+  		color: rgb(175, 175, 175);
+  		line-height: 0.926;
+	}
+
+	button {
+		padding: 5px;
+		background-color: @clr;
+		color: #fff;
+		border:none;
+		margin-top: 15px;
+	}
+	#next, #prev {
+		position: absolute;
+		font-size: 100px;
+		color: grey;
+	}
+	#prev {
+		top:0%;
+		left: 0;
+	}
+	#next {
+		top:0%;
+		right: 0;
+	}
+}
+/*categories=====*/
+.featuredProducts{
+	background-color: @clr;
+	color: #fff;
+  	font-size: 31px;
+  	font-family: "Oswald";
+  	line-height: 0.806;
+  	padding: 15px 0;
+}
+/*featuredProducts====*/
+.products {
+	padding: 20px 0 20px 0;
+
+	h1,p {
+	   font-size: 27px;
+	   font-family: "Oswald";
+	   color: rgb(175, 175, 175);
+	   line-height: 0.926;
+	   display: inline-block;	
+	   margin-top: 5px;
+	}
+
+	button {
+		padding: 5px 20px;
+		background-color: @clr;
+		color: #fff;
+		border:none;
+		float: right;
+		margin-top: 5px;
+		cursor: pointer;
+	}
+}
+
+
+.firts-ln, .second-ln {
+	display: flex;
+	justify-content: space-between;
+
+	div {
+		border:1px solid #e4e4e4;
+		padding: 40px 37px;
+		border-bottom: 4px solid @clr;
+		width: 210px;
+		height: 210px;
+		margin: 15px 0;
+		text-align: center;
+	}
+}
+/*products====*/
+.links {
+	padding: 20px 0;
+	color: #fff;
+	background-color: #3cc3b5;
+	font-family: "Open Sans";
+
+	h1 {
+		text-transform: uppercase;
+		padding-bottom: 15px; 
+	}
+
+	a {
+		font-family: "Open Sans";
+		padding: 7px 0;
+	}
+
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+/*links===*/
+footer {
+	background-color: #2da89b;
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+}
+
+
+/*===========*/
+#modal_form {
+	width: 300px; 
+	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 20px 10px;
+	text-align: center;
+
+	h1 {
+		color: @clr;
+	}
+
+#clear {
+	cursor: pointer; 
+
+	&:hover {
+		color: red;
+	}
+}
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+.ms {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	padding: 10px 20px;
+	background-color: #08a374;
+	color: #fff;
+	opacity: 0;
+	transition: all 5s;
+}
